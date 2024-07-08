@@ -5,29 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FormActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bienvenido a Viche Cultural"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:padding="16dp" />
+            android:hint="Nombre" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Intereses" />
 
         <Button
-            android:id="@+id/btnNext"
+            android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Continuar" />
+            android:text="Enviar" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
